@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.welinkdata.qyxcloud.provider.mapper.AccountMapper">
+  <resultMap id="BaseResultMap" type="com.welinkdata.qyxcloud.provider.model.domain.Account">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="enterprise_code" jdbcType="VARCHAR" property="enterpriseCode" />
+    <result column="payment_method" jdbcType="VARCHAR" property="paymentMethod" />
+    <result column="payment_way" jdbcType="VARCHAR" property="paymentWay" />
+    <result column="apply_date" jdbcType="TIMESTAMP" property="applyDate" />
+    <result column="open_date" jdbcType="TIMESTAMP" property="openDate" />
+    <result column="open_status" jdbcType="VARCHAR" property="openStatus" />
+    <result column="bank_code" jdbcType="VARCHAR" property="bankCode" />
+    <result column="bank_name" jdbcType="VARCHAR" property="bankName" />
+    <result column="account_name" jdbcType="VARCHAR" property="accountName" />
+    <result column="account_number" jdbcType="VARCHAR" property="accountNumber" />
+    <result column="file_path" jdbcType="VARCHAR" property="filePath" />
+    <result column="version" jdbcType="INTEGER" property="version" />
+    <result column="creator_id" jdbcType="VARCHAR" property="creatorId" />
+    <result column="creator" jdbcType="VARCHAR" property="creator" />
+    <result column="created_time" jdbcType="TIMESTAMP" property="createdTime" />
+    <result column="last_operator_id" jdbcType="VARCHAR" property="lastOperatorId" />
+    <result column="last_operator" jdbcType="VARCHAR" property="lastOperator" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, enterprise_code, payment_method, payment_way, apply_date, open_date, open_status, 
+    bank_code, bank_name, account_name, account_number, file_path, version, creator_id, 
+    creator, created_time, last_operator_id, last_operator, update_time
+  </sql>
+  <resultMap id="BaseResultMap" type="com.welinkdata.qyxcloud.provider.model.domain.Account">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="enterprise_code" jdbcType="VARCHAR" property="enterpriseCode" />
+    <result column="payment_method" jdbcType="VARCHAR" property="paymentMethod" />
+    <result column="payment_way" jdbcType="VARCHAR" property="paymentWay" />
+    <result column="apply_date" jdbcType="TIMESTAMP" property="applyDate" />
+    <result column="open_date" jdbcType="TIMESTAMP" property="openDate" />
+    <result column="open_status" jdbcType="VARCHAR" property="openStatus" />
+    <result column="bank_code" jdbcType="VARCHAR" property="bankCode" />
+    <result column="bank_name" jdbcType="VARCHAR" property="bankName" />
+    <result column="account_name" jdbcType="VARCHAR" property="accountName" />
+    <result column="account_number" jdbcType="VARCHAR" property="accountNumber" />
+    <result column="file_path" jdbcType="VARCHAR" property="filePath" />
+    <result column="version" jdbcType="INTEGER" property="version" />
+    <result column="creator_id" jdbcType="VARCHAR" property="creatorId" />
+    <result column="creator" jdbcType="VARCHAR" property="creator" />
+    <result column="created_time" jdbcType="TIMESTAMP" property="createdTime" />
+    <result column="last_operator_id" jdbcType="VARCHAR" property="lastOperatorId" />
+    <result column="last_operator" jdbcType="VARCHAR" property="lastOperator" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, enterprise_code, payment_method, payment_way, apply_date, open_date, open_status, 
+    bank_code, bank_name, account_name, account_number, file_path, version, creator_id, 
+    creator, created_time, last_operator_id, last_operator, update_time
+  </sql>
+  <resultMap id="BaseResultMap" type="com.welinkdata.qyxcloud.provider.model.domain.Account">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="enterprise_code" jdbcType="VARCHAR" property="enterpriseCode" />
+    <result column="payment_method" jdbcType="VARCHAR" property="paymentMethod" />
+    <result column="payment_way" jdbcType="VARCHAR" property="paymentWay" />
+    <result column="apply_date" jdbcType="TIMESTAMP" property="applyDate" />
+    <result column="open_date" jdbcType="TIMESTAMP" property="openDate" />
+    <result column="open_status" jdbcType="VARCHAR" property="openStatus" />
+    <result column="bank_code" jdbcType="VARCHAR" property="bankCode" />
+    <result column="bank_name" jdbcType="VARCHAR" property="bankName" />
+    <result column="account_name" jdbcType="VARCHAR" property="accountName" />
+    <result column="account_number" jdbcType="VARCHAR" property="accountNumber" />
+    <result column="file_path" jdbcType="VARCHAR" property="filePath" />
+    <result column="version" jdbcType="INTEGER" property="version" />
+    <result column="creator_id" jdbcType="VARCHAR" property="creatorId" />
+    <result column="creator" jdbcType="VARCHAR" property="creator" />
+    <result column="created_time" jdbcType="TIMESTAMP" property="createdTime" />
+    <result column="last_operator_id" jdbcType="VARCHAR" property="lastOperatorId" />
+    <result column="last_operator" jdbcType="VARCHAR" property="lastOperator" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, enterprise_code, payment_method, payment_way, apply_date, open_date, open_status, 
+    bank_code, bank_name, account_name, account_number, file_path, version, creator_id, 
+    creator, created_time, last_operator_id, last_operator, update_time
+  </sql>
+</mapper>
