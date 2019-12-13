@@ -43,14 +43,7 @@ public class CodeGeneratorMain {
 
         Map<String, String> map = Maps.newHashMap();
 
-        map.put("t_cashier_account", "Account");
-        map.put("t_cashier_balance", "Balance");
-        map.put("t_cashier_bill_payment", "BillPayment");
-        map.put("t_cashier_order", "Order");
-        map.put("t_cashier_receipt", "Receipt");
-        map.put("t_cashier_channel", "Channel");
-        map.put("t_cashier_customer_store", "CustomerStore");
-        map.put("t_cashier_store_channel", "StoreChannel");
+        map.put("t_cashier_account_user", "AccountUser");
         cgm.genMuliCodeWithCustomName(map);
     }
 

@@ -44,7 +44,7 @@ public class LombokPlugin extends PluginAdapter {
 //        topLevelClass.addImportedType("lombok.NoArgsConstructor");
 //        topLevelClass.addImportedType("lombok.AllArgsConstructor");
         topLevelClass.addImportedType("javax.persistence.*");
-        topLevelClass.addImportedType("com.welinkdata.qyxcloud.core.mybatis.BaseEntity");
+        topLevelClass.addImportedType("com.welinkdata.qyxcloud.core.mybatis.BaseNewEntiy");
         topLevelClass.addImportedType("io.swagger.annotations.ApiModelProperty");
         if(topLevelClass.getImportedTypes().contains(new FullyQualifiedJavaType("java.util.Date"))){
             topLevelClass.addImportedType("com.fasterxml.jackson.annotation.JsonFormat");
@@ -63,13 +63,15 @@ public class LombokPlugin extends PluginAdapter {
 
         //添加domain的注释
         topLevelClass.addJavaDocLine("/**");
+        topLevelClass.addJavaDocLine(" * " + introspectedTable.getRemarks());
         topLevelClass.addJavaDocLine(" * @author " + CodeGeneratorConfig.AUTHOR);
         topLevelClass.addJavaDocLine(" * @date " + CodeGeneratorConfig.DATE);
         topLevelClass.addJavaDocLine(" */");
 
-        topLevelClass.setSuperClass(new FullyQualifiedJavaType("BaseEntity"));
+        topLevelClass.setSuperClass(new FullyQualifiedJavaType("BaseNewEntiy"));
 //        generatorDefaultSerialVersionUID(topLevelClass);
 
+//        topLevelClass.getFields().add(0, new Field());
         // 将需要忽略生成的属性过滤掉
         List<Field> fields = topLevelClass.getFields();
         String ignoreFields = CodeGeneratorConfig.IGNOREFIELDS;
