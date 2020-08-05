@@ -1,6 +1,5 @@
 package com.codegen.service;
 
-import com.codegen.config.MyJDBCConnectionConfiguration;
 import com.codegen.plugin.LombokPlugin;
 import com.codegen.service.impl.ControllerGenerator;
 import com.codegen.service.impl.MapperGenerator;
@@ -61,7 +60,7 @@ public class CodeGeneratorManager extends CodeGeneratorConfig {
         context.addProperty(PropertyRegistry.CONTEXT_BEGINNING_DELIMITER, "`");
         context.addProperty(PropertyRegistry.CONTEXT_ENDING_DELIMITER, "`");
 
-        MyJDBCConnectionConfiguration jdbcConnectionConfiguration = new MyJDBCConnectionConfiguration();
+        JDBCConnectionConfiguration jdbcConnectionConfiguration = new JDBCConnectionConfiguration();
         jdbcConnectionConfiguration.setConnectionURL(JDBC_URL);
         jdbcConnectionConfiguration.setUserId(JDBC_USERNAME);
         jdbcConnectionConfiguration.setPassword(JDBC_PASSWORD);
