@@ -33,6 +33,8 @@ public class CodeGeneratorConfig {
     // 项目 Controller 所在包
     protected static String CONTROLLER_PACKAGE;
 
+    // 存放路径
+    protected static String PACKAGE_PATH_BASE_PACKAGE;
     // 生成的 Service 存放路径
     protected static String PACKAGE_PATH_SERVICE;
     // 生成的 Service 实现存放路径

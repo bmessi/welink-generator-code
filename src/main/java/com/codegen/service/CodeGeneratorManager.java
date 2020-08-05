@@ -316,6 +316,7 @@ public class CodeGeneratorManager extends CodeGeneratorConfig {
         String serviceImplPackage = prop.getProperty("package.path.service.impl");
         String controllerPackage = prop.getProperty("package.path.controller");
 
+        PACKAGE_PATH_BASE_PACKAGE = packageConvertPath(BASE_PACKAGE);
         PACKAGE_PATH_SERVICE = "".equals(servicePackage) ? packageConvertPath(SERVICE_PACKAGE) : servicePackage;
         PACKAGE_PATH_SERVICE_IMPL = "".equals(serviceImplPackage) ? packageConvertPath(SERVICE_IMPL_PACKAGE) : serviceImplPackage;
         PACKAGE_PATH_CONTROLLER = "".equals(controllerPackage) ? packageConvertPath(CONTROLLER_PACKAGE) : controllerPackage;
