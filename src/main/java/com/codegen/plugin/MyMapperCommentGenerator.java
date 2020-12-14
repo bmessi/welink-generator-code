@@ -170,6 +170,7 @@ public class MyMapperCommentGenerator implements CommentGenerator {
 
     @Override
     public void addModelClassComment(TopLevelClass topLevelClass, IntrospectedTable introspectedTable) {
+        System.out.println("====="+introspectedTable.getRemarks());
 
     }
 

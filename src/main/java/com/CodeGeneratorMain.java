@@ -20,9 +20,10 @@ public class CodeGeneratorMain extends CodeGeneratorConfig {
         CodeGeneratorManager cgm = new CodeGeneratorManager();
         deleteFiles();
         Map<String, String> map = Maps.newHashMap();
-        map.put("t_cashier_order_invoice", "OrderInvoice");
-        map.put("t_cashier_order_shippingaddress", "OrderShippingAddress");
-//        cgm.genMuliCodeWithCustomName(map);
+//        map.put("t_cashier_product_attribute_type", "ProductAttributeType");
+        map.put("t_cashier_product_attribute", "ProductAttribute");
+//        map.put("t_cashier_product_attribute_value", "ProductAttributeValue");
+        cgm.genMuliCodeWithCustomName(map);
     }
 
 
